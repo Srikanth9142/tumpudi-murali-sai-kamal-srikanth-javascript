@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Epam-Login</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+</head>
+<body>
+	<header>
+		<form name="registerform" method="post" onsubmit="handleSubmit()">
+		<div class="mainheader">
+			<div class="head">
+				<img src="epamlogo.png" alt="logo" id="img">
+				<h2>Sign Up</h2>
+				<p class="cancel">X</p>
+			</div>
+			<div class="input-icons">
+				 <i class="fa fa-user icon"> </i> 
+                <p><input type="text" class = "input-field" placeholder="John Smith" name = "name" id="name" required></p>
+
+			</div>
+			<div class="input-icons">
+				<i class="fa fa-eye-slash icon"></i>
+				<p><input type="text" id="email"  class="input-field" placeholder="example@gmail.com" required></p>
+			</div>
+			<div class="input-icons">
+				<i class="fa fa-eye-slash icon"></i>
+				<p><input type="password" id="password1" class="input-field" name="password-field" placeholder="password" required></p>
+			</div>
+			<div class="input-icons">
+				<i class="fa fa-lock icon"></i>
+				<p><input type="password" id="password2" class="input-field" name="password-field" placeholder="confirm password" required></p>
+			</div>
+			<div class="input-icons">
+				<i class="fa fa-phone icon"></i>
+				<p><input type="text" id="number" placeholder="Mobile Number" class="input-field" required></p>
+			</div>
+			<div class="input-icons">
+				<i class="fa fa-calendar icon"></i>
+				<p><input type="text" id="date" placeholder="dd-mm-yyyy" class="input-field" required></p>
+			</div>
+			<br>
+			<button type="submit" class="btn">Login</button>
+			
+		</div>
+	</form>
+	</header>
+</body>
+<script src="script.js"></script>
+</html>
